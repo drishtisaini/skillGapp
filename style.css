@@ -1,0 +1,130 @@
+/* Global Styles */
+body {
+  margin: 0;
+  font-family: 'Segoe UI', sans-serif;
+  background-color: #F5E7DE;
+  color: #333;
+}
+
+/* Centered Box for Home */
+.home-bg {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: #F5E7DE;
+}
+
+.center-box {
+  text-align: center;
+  background: white;
+  padding: 40px;
+  border-radius: 20px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+}
+
+.center-box h1 {
+  font-size: 2rem;
+  color: #E28F83;
+}
+
+.center-box p {
+  margin: 10px 0 20px;
+  font-size: 1rem;
+}
+
+/* Buttons */
+.button-group {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+
+.btn {
+  background-color: #F2BFA4;
+  color: white;
+  border: none;
+  padding: 12px 24px;
+  border-radius: 8px;
+  font-weight: bold;
+  font-size: 1rem;
+  cursor: pointer;
+  text-decoration: none;
+  transition: background-color 0.3s ease, box-shadow 0.3s ease;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* 🔥 added */
+}
+
+.btn:hover {
+  background-color: #e7a78c;
+  box-shadow: 0 6px 14px rgba(0, 0, 0, 0.15); /* 🔥 added */
+}
+
+.btn-outline {
+  background-color: transparent;
+  color: #F2BFA4;
+  border: 2px solid #F2BFA4;
+  transition: background-color 0.3s ease, color 0.3s ease, box-shadow 0.3s ease;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.08); /* 🔥 added */
+}
+
+.btn-outline:hover {
+  background-color: #F2BFA4;
+  color: white;
+  box-shadow: 0 6px 14px rgba(0, 0, 0, 0.15); /* 🔥 added */
+}
+
+/* Auth Pages (login/signup) */
+.auth-container {
+  width: 90%;
+  max-width: 400px;
+  margin: 100px auto;
+  padding: 40px;
+  background: white;
+  border-radius: 20px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+
+.auth-container h2 {
+  margin-bottom: 20px;
+  color: #E28F83;
+}
+
+.auth-container form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.auth-container input {
+  padding: 12px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  font-size: 1rem;
+}
+
+.auth-container button {
+  background-color: #F2BFA4;
+  color: white;
+  border: none;
+  padding: 12px;
+  border-radius: 8px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease, box-shadow 0.3s ease;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* 🔥 added */
+}
+
+.auth-container button:hover {
+  background-color: #e7a78c;
+  box-shadow: 0 6px 14px rgba(0, 0, 0, 0.15); /* 🔥 added */
+}
+
+.auth-container a {
+  color: #F2BFA4;
+  text-decoration: none;
+}
+
+.auth-container a:hover {
+  text-decoration: underline;
+}
