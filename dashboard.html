@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>SkillVision Dashboard</title>
+  <link rel="stylesheet" href="dashboard.css" />
+</head>
+<body>
+  <header class="navbar">
+    <nav>
+      <ul>
+        <li><a href="#">Dashboard</a></li>
+        <li><a href="#">Job Trends</a></li>
+        <li><a href="#">Resume Builder</a></li>
+        <li><button class="logout">Log Out</button></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main class="main-content">
+    <section class="hero">
+      <h1>Welcome to SkillGap 👋</h1>
+      <h2 id="welcome-message" class="welcome-text"></h2>
+      <p>Your AI-powered Skill Gap Analyzer</p>
+      <div class="hero-buttons">
+        <button class="primary-btn">Get Started</button>
+      </div>
+    </section>
+
+    <section class="dashboard-grid">
+      <div class="card">
+        <h2>Skill Gap Map</h2>
+        <img src="skill-gap-map.png" alt="Skill Gap Map" />
+      </div>
+
+      <div class="card">
+        <h2>Technical Skills in Demand</h2>
+        <ul>
+          <li>Python <div class="bar"><div class="fill" style="width: 90%"></div></div></li>
+          <li>Data Analysis <div class="bar"><div class="fill" style="width: 80%"></div></div></li>
+          <li>Machine Learning <div class="bar"><div class="fill" style="width: 75%"></div></div></li>
+          <li>JavaScript <div class="bar"><div class="fill" style="width: 70%"></div></div></li>
+        </ul>
+      </div>
+
+      <div class="card">
+        <h2>Streak</h2>
+        <div class="streak-badge">7</div>
+        <button class="secondary-btn">Continue Streak</button>
+      </div>
+
+      <div class="card">
+        <h2>Personal Roadmap</h2>
+        <ul>
+          <li>Week 1: Python Basics</li>
+          <li>Week 2: Data Structures</li>
+          <li>Week 3: Pandas</li>
+        </ul>
+      </div>
+
+      <div class="card">
+        <h2>Resume Builder</h2>
+        <img src="resume-builder.png" alt="Resume Builder" />
+      </div>
+    </section>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>

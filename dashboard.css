@@ -1,0 +1,126 @@
+body {
+  margin: 0;
+  font-family: 'Segoe UI', sans-serif;
+  background-color: #fdf6f0;
+}
+
+.navbar {
+  background-color: #fff;
+  padding: 1rem;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+}
+
+.navbar ul {
+  display: flex;
+  justify-content: space-around;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.navbar ul li a,
+.logout {
+  color: #333;
+  text-decoration: none;
+  font-weight: 500;
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+
+.main-content {
+  padding: 2rem;
+  max-width: 1200px;
+  margin: auto;
+}
+
+.hero {
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+.hero h1 {
+  font-size: 2rem;
+  margin-bottom: 0.5rem;
+  color: #333;
+}
+
+.hero p {
+  font-size: 1rem;
+  margin-bottom: 1rem;
+  color: #555;
+}
+
+.hero-buttons {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+}
+
+.primary-btn {
+  background-color: #f4a261;
+  color: white;
+  padding: 0.75rem 1.5rem;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+.secondary-btn {
+  background-color: white;
+  color: #f4a261;
+  border: 2px solid #f4a261;
+  padding: 0.75rem 1.5rem;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+.dashboard-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 2rem;
+}
+
+.card {
+  background-color: white;
+  padding: 1rem;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+}
+
+.card h2 {
+  margin-top: 0;
+  color: #333;
+}
+
+.card img {
+  width: 100%;
+  border-radius: 8px;
+}
+
+.bar {
+  background-color: #eee;
+  height: 10px;
+  border-radius: 5px;
+  margin: 5px 0;
+}
+
+.fill {
+  background-color: #f4a261;
+  height: 100%;
+  border-radius: 5px;
+}
+
+.streak-badge {
+  font-size: 2rem;
+  color: #e76f51;
+  font-weight: bold;
+  margin: 1rem 0;
+}
+
+.welcome-text {
+  text-align: center;
+  font-size: 1.5rem;
+  color: #e76f51;
+  margin-bottom: 1rem;
+}
