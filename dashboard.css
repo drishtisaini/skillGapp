@@ -1,34 +1,99 @@
-body {
+/* General Reset */
+* {
   margin: 0;
-  font-family: 'Segoe UI', sans-serif;
-  background-color: #1E1E2F; /* Charcoal */
-  color: #E0E0E0; /* Light gray text */
+  padding: 0;
+  box-sizing: border-box;
 }
 
+body {
+  font-family: 'Segoe UI', sans-serif;
+  background-color: #1E1E2F; /* Dark Charcoal */
+  color: #E0E0E0; /* Light gray text */
+  line-height: 1.6;
+}
+
+/* Navbar */
 .navbar {
   background-color: #2A2A3D; /* Slightly lighter charcoal */
   padding: 1rem;
   box-shadow: 0 2px 4px rgba(0,0,0,0.1);
 }
 
-.navbar ul {
+.navbar nav {
   display: flex;
-  justify-content: space-around;
-  list-style: none;
-  margin: 0;
-  padding: 0;
+  justify-content: space-between;
+  align-items: center;
 }
 
-.navbar ul li a,
-.logout {
-  color: #A1FFCE; /* NeoMint */
+/* Left Menu */
+.nav-left {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+}
+
+.nav-left li a {
   text-decoration: none;
-  font-weight: 500;
+  font-weight: 600;
+  color: #A1FFCE; /* NeoMint */
+  transition: color 0.3s ease;
+}
+
+.nav-left li a:hover {
+  color: #00c792; /* Hover teal */
+}
+
+/* Right Side (notifications + logout) */
+.nav-right {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.notification-btn {
+  position: relative;
   background: none;
   border: none;
+  font-size: 20px;
+  cursor: pointer;
+  color: #00ffae;
+  transition: color 0.3s ease;
+}
+
+.notification-btn:hover {
+  color: #00c792;
+}
+
+.badge {
+  position: absolute;
+  top: -8px;
+  right: -10px;
+  background: red;
+  color: white;
+  font-size: 12px;
+  padding: 2px 6px;
+  border-radius: 50%;
+}
+
+/* Logout Button */
+.logout {
+  text-decoration: none;
+  color: #A1FFCE;
+  border: 2px solid #A1FFCE;
+  background: none;
+  padding: 6px 12px;
+  border-radius: 6px;
+  font-weight: 600;
+  transition: all 0.3s ease;
   cursor: pointer;
 }
 
+.logout:hover {
+  background-color: #00BFA6;
+  color: #1E1E2F;
+}
+
+/* Main Content */
 .main-content {
   padding: 2rem;
   max-width: 1200px;
@@ -66,6 +131,11 @@ body {
   border-radius: 8px;
   cursor: pointer;
   font-weight: bold;
+  transition: background 0.3s ease;
+}
+
+.primary-btn:hover {
+  background-color: #00c792;
 }
 
 .secondary-btn {
@@ -76,8 +146,15 @@ body {
   border-radius: 8px;
   cursor: pointer;
   font-weight: bold;
+  transition: all 0.3s ease;
 }
 
+.secondary-btn:hover {
+  background-color: #A1FFCE;
+  color: #1E1E2F;
+}
+
+/* Dashboard Grid */
 .dashboard-grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
@@ -101,6 +178,7 @@ body {
   border-radius: 8px;
 }
 
+/* Progress Bars */
 .bar {
   background-color: #444; /* Dark base bar */
   height: 10px;
@@ -114,6 +192,7 @@ body {
   border-radius: 5px;
 }
 
+/* Streak Badge */
 .streak-badge {
   font-size: 2rem;
   color: #00BFA6;
@@ -121,6 +200,7 @@ body {
   margin: 1rem 0;
 }
 
+/* Welcome Text */
 .welcome-text {
   text-align: center;
   font-size: 1.5rem;

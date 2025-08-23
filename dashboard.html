@@ -7,14 +7,21 @@
   <link rel="stylesheet" href="dashboard.css" />
 </head>
 <body>
-  <header class="navbar">
+<header class="navbar">
     <nav>
-      <ul>
+      <ul class="nav-left">
         <li><a href="#">Dashboard</a></li>
         <li><a href="#">Job Trends</a></li>
         <li><a href="#">Resume Builder</a></li>
-        <li><button class="logout">Log Out</button></li>
       </ul>
+
+      <div class="nav-right">
+        <button class="notification-btn">
+          🔔
+          <span class="badge">3</span>
+        </button>
+        <a href="#" class="logout">Log Out</a>
+      </div>
     </nav>
   </header>
 
@@ -67,5 +74,8 @@
   </main>
 
   <script src="script.js"></script>
+</body>
+</html>
+
 </body>
 </html>
