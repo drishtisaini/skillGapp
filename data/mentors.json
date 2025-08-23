@@ -1,0 +1,16 @@
+[
+  {
+    "mentor_id": "M001",
+    "name": "Dr. Neha",
+    "skills": ["Python", "SQL", "Docker"],
+    "experience": 5,
+    "availability": "2 hours/week"
+  },
+  {
+    "mentor_id": "M002",
+    "name": "Rohit",
+    "skills": ["Power BI", "Excel", "Data Analysis"],
+    "experience": 3,
+    "availability": "1 hour/week"
+  }
+]

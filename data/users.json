@@ -1,0 +1,21 @@
+
+[
+  {
+    "user_id": "U001",
+    "name": "Aarav",
+    "skills": ["Python", "SQL"],
+    "skill_gaps": ["Docker"],
+    "role": "Learner",
+    "username": "aarav",
+    "password": "1234"
+  },
+  {
+    "user_id": "U002",
+    "name": "Sneha",
+    "skills": ["Java", "Spring Boot"],
+    "skill_gaps": ["AWS"],
+    "role": "Admin",
+    "username": "sneha_admin",
+    "password": "admin123"
+  }
+]

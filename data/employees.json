@@ -1,0 +1,20 @@
+[
+  {
+    "name": "Aarav",
+    "department": "Engineering",
+    "skills": ["Python", "SQL", "Docker"],
+    "skill_gaps": ["Power BI"] 
+  },
+  {
+    "name": "Sneha",
+    "department": "Engineering",
+    "skills": ["Python", "SQL", "Docker"],
+    "skill_gaps": ["AWS"]
+  },
+  {
+    "name": "Rohit",
+    "department": "Analytics",
+    "skills": ["Power BI", "Excel", "SQL"],
+    "skill_gaps": ["Python"]
+  }
+]

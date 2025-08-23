@@ -1,0 +1,15 @@
+[
+  {
+    "user_id": "U001",
+    "name": "Aarav",
+    "certificates": [
+      {
+        "title": "Python Basics",
+        "issuer": "Coursera",
+        "date": "2024-05-12",
+        "file": "certs/aarav_python.pdf",
+        "status": "Approved"
+      }
+    ]
+  }
+]
