@@ -1,0 +1,122 @@
+{
+  "source_file": "resume.pdf",
+  "extracted_skills": [
+    {
+      "skill": "AWS",
+      "confidence": 1.0
+    },
+    {
+      "skill": "Algorithms",
+      "confidence": 1.0
+    },
+    {
+      "skill": "Azure",
+      "confidence": 1.0
+    },
+    {
+      "skill": "C",
+      "confidence": 1.0
+    },
+    {
+      "skill": "C#",
+      "confidence": 1.0
+    },
+    {
+      "skill": "Git",
+      "confidence": 1.0
+    },
+    {
+      "skill": "GitHub",
+      "confidence": 1.0
+    },
+    {
+      "skill": "Go",
+      "confidence": 1.0
+    },
+    {
+      "skill": "Java",
+      "confidence": 1.0
+    },
+    {
+      "skill": "Python",
+      "confidence": 1.0
+    },
+    {
+      "skill": "R",
+      "confidence": 1.0
+    },
+    {
+      "skill": "SQL",
+      "confidence": 1.0
+    },
+    {
+      "skill": "Google Cloud",
+      "confidence": 0.9
+    },
+    {
+      "skill": "TensorFlow",
+      "confidence": 0.9
+    },
+    {
+      "skill": "TypeScript",
+      "confidence": 0.9
+    },
+    {
+      "skill": "C++",
+      "confidence": 0.7
+    },
+    {
+      "skill": "Django",
+      "confidence": 0.7
+    },
+    {
+      "skill": "Flask",
+      "confidence": 0.7
+    },
+    {
+      "skill": "Kubernetes",
+      "confidence": 0.7
+    },
+    {
+      "skill": "Linux",
+      "confidence": 0.7
+    },
+    {
+      "skill": "MongoDB",
+      "confidence": 0.7
+    },
+    {
+      "skill": "Node.js",
+      "confidence": 0.7
+    },
+    {
+      "skill": "Pandas",
+      "confidence": 0.7
+    },
+    {
+      "skill": "PostgreSQL",
+      "confidence": 0.7
+    },
+    {
+      "skill": "PyTorch",
+      "confidence": 0.7
+    }
+  ],
+  "top_skills": [
+    "AWS",
+    "Algorithms",
+    "Azure",
+    "C",
+    "C#",
+    "Git",
+    "GitHub",
+    "Go",
+    "Java",
+    "Python",
+    "R",
+    "SQL",
+    "Google Cloud",
+    "TensorFlow",
+    "TypeScript"
+  ]
+}

@@ -1,0 +1,7 @@
+# core
+PyMuPDF==1.24.11      # provides "fitz"
+rapidfuzz==3.9.6
+python-docx==1.1.2
+
+# useful soon (keep now so teammates have same env)
+pandas==2.2.2

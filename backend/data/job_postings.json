@@ -1,0 +1,14 @@
+[
+  {
+    "role": "Data Analyst",
+    "skills_required": ["Python", "SQL", "Tableau", "Excel", "Power BI"]
+  },
+  {
+    "role": "Frontend Developer",
+    "skills_required": ["JavaScript", "React", "CSS", "HTML", "Git"]
+  },
+  {
+    "role": "Machine Learning Engineer",
+    "skills_required": ["Python", "TensorFlow", "PyTorch", "Scikit-learn", "Docker"]
+  }
+]

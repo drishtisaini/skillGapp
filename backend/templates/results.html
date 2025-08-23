@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Skill Gap Results</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #d0f0e0; /* NeoMint */
+      color: #333333; /* Charcoal */
+      padding: 20px;
+    }
+    h1 {
+      color: #333333;
+    }
+    .card {
+      background: white;
+      padding: 20px;
+      border-radius: 10px;
+      box-shadow: 0px 2px 6px #e0e0e0;
+      margin-bottom: 20px;
+    }
+    .gap {
+      color: #b22222;
+      font-weight: bold;
+    }
+  </style>
+</head>
+<body>
+  <h1>📊 Skill Gap Analysis</h1>
+
+  <div class="card">
+    <h2>Your Skills</h2>
+    <ul>
+      {% for skill in result.user_skills %}
+        <li>{{ skill }}</li>
+      {% endfor %}
+    </ul>
+  </div>
+
+  <div class="card">
+    <h2>Top Market Skills</h2>
+    <ul>
+      {% for skill, count in result.market_top_skills[:10] %}
+        <li>{{ skill }} ({{ count }} postings)</li>
+      {% endfor %}
+    </ul>
+  </div>
+
+  <div class="card">
+    <h2>Skill Gaps</h2>
+    <ul>
+      {% for skill in result.skill_gap %}
+        <li class="gap">{{ skill }}</li>
+      {% endfor %}
+    </ul>
+  </div>
+<div class="card">
+    <h2>📘 Recommended Learning Roadmap</h2>
+    {% if roadmap %}
+      <ul>
+        {% for skill, links in roadmap.items() %}
+          <li>
+            <strong>{{ skill }}</strong>
+            <ul>
+              {% for item in links %}
+                <li>
+                  <a href="{{ item.link }}" target="_blank">{{ item.title }}</a>
+                </li>
+              {% endfor %}
+            </ul>
+          </li>
+        {% endfor %}
+      </ul>
+    {% else %}
+      <p>No roadmap available.</p>
+    {% endif %}
+  </div>
+
+</body>
+</html>
