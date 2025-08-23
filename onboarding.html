@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Onboarding Wizard</title>
+  <link rel="stylesheet" href="onboarding.css" />
+</head>
+<body>
+  <div class="wizard-container">
+    <div class="wizard-header">
+      <h1>Welcome to SkillGap</h1>
+      <p>Let’s set up your journey in a few quick steps.</p>
+    </div>
+
+    <!-- Progress Bar -->
+    <div class="progress-bar">
+      <div id="progress"></div>
+    </div>
+
+    <!-- Wizard Steps -->
+    <form id="onboardingForm">
+      <!-- Step 1 -->
+      <div class="step active">
+        <h2>Welcome 🎉</h2>
+        <p>We’ll guide you through setting up your account preferences.</p>
+      </div>
+
+      <!-- Step 2 -->
+      <div class="step">
+        <h2>Profile Setup 👤</h2>
+        <input type="text" placeholder="Full Name" required>
+        <input type="email" placeholder="Email" required>
+      </div>
+
+      <!-- Step 3 -->
+      <div class="step">
+        <h2>Select Your Skills 💡</h2>
+        <label><input type="checkbox"> Web Development</label>
+        <label><input type="checkbox"> Data Science</label>
+        <label><input type="checkbox"> Marketing</label>
+        <label><input type="checkbox"> Design</label>
+      </div>
+
+      <!-- Step 4 -->
+      <div class="step">
+        <h2>Your Experience Level 📊</h2>
+        <select required>
+          <option value="">Choose...</option>
+          <option>Beginner</option>
+          <option>Intermediate</option>
+          <option>Expert</option>
+        </select>
+      </div>
+
+      <!-- Step 5 -->
+      <div class="step">
+        <h2>Your Goals 🎯</h2>
+        <textarea placeholder="Tell us your short/long term goals"></textarea>
+      </div>
+
+      <!-- Step 6 -->
+      <div class="step">
+        <h2>Notification Preferences 🔔</h2>
+        <label><input type="checkbox"> Email</label>
+        <label><input type="checkbox"> SMS</label>
+        <label><input type="checkbox"> WhatsApp</label>
+      </div>
+
+      <!-- Step 7 -->
+      <div class="step">
+        <h2>Summary ✅</h2>
+        <p>Review your details and click Finish to get started.</p>
+      </div>
+
+      <!-- Buttons -->
+      <div class="buttons">
+        <button type="button" id="prevBtn">Previous</button>
+        <button type="button" id="nextBtn">Next</button>
+      </div>
+    </form>
+  </div>
+
+  <script src="onboarding.js"></script>
+</body>
+</html>
