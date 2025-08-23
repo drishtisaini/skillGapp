@@ -1,13 +1,14 @@
 body {
   margin: 0;
   font-family: 'Segoe UI', sans-serif;
-  background-color: #fdf6f0;
+  background-color: #1E1E2F; /* Charcoal */
+  color: #E0E0E0; /* Light gray text */
 }
 
 .navbar {
-  background-color: #fff;
+  background-color: #2A2A3D; /* Slightly lighter charcoal */
   padding: 1rem;
-  box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
 }
 
 .navbar ul {
@@ -20,7 +21,7 @@ body {
 
 .navbar ul li a,
 .logout {
-  color: #333;
+  color: #A1FFCE; /* NeoMint */
   text-decoration: none;
   font-weight: 500;
   background: none;
@@ -42,13 +43,13 @@ body {
 .hero h1 {
   font-size: 2rem;
   margin-bottom: 0.5rem;
-  color: #333;
+  color: #A1FFCE;
 }
 
 .hero p {
   font-size: 1rem;
   margin-bottom: 1rem;
-  color: #555;
+  color: #B0BEC5;
 }
 
 .hero-buttons {
@@ -58,21 +59,23 @@ body {
 }
 
 .primary-btn {
-  background-color: #f4a261;
-  color: white;
+  background-color: #00BFA6; /* Teal */
+  color: #1E1E2F;
   padding: 0.75rem 1.5rem;
   border: none;
   border-radius: 8px;
   cursor: pointer;
+  font-weight: bold;
 }
 
 .secondary-btn {
-  background-color: white;
-  color: #f4a261;
-  border: 2px solid #f4a261;
+  background-color: transparent;
+  color: #A1FFCE;
+  border: 2px solid #A1FFCE;
   padding: 0.75rem 1.5rem;
   border-radius: 8px;
   cursor: pointer;
+  font-weight: bold;
 }
 
 .dashboard-grid {
@@ -82,15 +85,15 @@ body {
 }
 
 .card {
-  background-color: white;
+  background-color: #2A2A3D;
   padding: 1rem;
   border-radius: 12px;
-  box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+  box-shadow: 0 4px 12px rgba(0,0,0,0.2);
 }
 
 .card h2 {
   margin-top: 0;
-  color: #333;
+  color: #A1FFCE;
 }
 
 .card img {
@@ -99,21 +102,21 @@ body {
 }
 
 .bar {
-  background-color: #eee;
+  background-color: #444; /* Dark base bar */
   height: 10px;
   border-radius: 5px;
   margin: 5px 0;
 }
 
 .fill {
-  background-color: #f4a261;
+  background: linear-gradient(to right, #A1FFCE, #00BFA6); /* Gradient fill */
   height: 100%;
   border-radius: 5px;
 }
 
 .streak-badge {
   font-size: 2rem;
-  color: #e76f51;
+  color: #00BFA6;
   font-weight: bold;
   margin: 1rem 0;
 }
@@ -121,6 +124,6 @@ body {
 .welcome-text {
   text-align: center;
   font-size: 1.5rem;
-  color: #e76f51;
+  color: #A1FFCE;
   margin-bottom: 1rem;
 }
