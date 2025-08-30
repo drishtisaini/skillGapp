@@ -1,52 +1,160 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-    <title>Activity Log</title>
-    <style>
-        body { font-family: Arial, sans-serif; padding: 20px; }
-        h1 { color: darkblue; }
-        ul { list-style-type: none; padding: 0; }
-        li { padding: 5px; border-bottom: 1px solid #ccc; }
-    </style>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>SkillGap</title>
+  <link rel="stylesheet" href="index.css" />
 </head>
 <body>
-    <h1>Activity Log</h1>
-    <ul id="logList"></ul>
+  <header class="navbar">
+    <div class="container nav-content">
+      <div class="logo">SkillGap</div>
+      <nav>
+        <ul>
+          <li><a href="#features">Features</a></li>
+          <li><a href="#modules">Modules</a></li>
+          <li><a href="#pricing">Pricing</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+      <div class="nav-actions">
+        <button id="theme-toggle" class="btn-secondary">🌙</button>
+        <button class="btn-link" id="signin-btn">Sign In</button>
+        <button class="btn-primary" id="getstarted-btn">Get Started</button>
+      </div>
+    </div>
+  </header>
 
-    <script>
-        // Function to load logs
-        async function loadLogs() {
-            const res = await fetch('/logs');
-            const logs = await res.json();
-            const list = document.getElementById('logList');
-            list.innerHTML = '';
-            logs.forEach(log => {
-                const li = document.createElement('li');
-                li.textContent = `[${new Date(log.timestamp).toLocaleString()}] ${log.user} - ${log.action}`;
-                list.appendChild(li);
-            });
-        }
+  <section class="hero">
+    <div class="container hero-content">
+      <p class="tagline">AI-Powered Career Development Platform</p>
+      <h1>Transform Your Career with <span>AI-Enhanced</span> Upskilling</h1>
+      <p class="subtext">
+        Comprehensive career intelligence platform that analyzes your skills, identifies market gaps,
+        and creates personalized learning roadmaps for exponential career growth.
+      </p>
+      <div class="hero-buttons">
+        <button class="btn-primary" id="start-journey">Start Your Journey</button>
+        <button class="btn-secondary">Watch Demo</button>
+      </div>
+      <div class="stats">
+        <div><strong>9</strong><span>AI Powered Modules</span></div>
+        <div><strong>500+</strong><span>Career Paths Supported</span></div>
+        <div><strong>10k+</strong><span>Skills Analyzed</span></div>
+        <div><strong>94%</strong><span>Success Rate</span></div>
+      </div>
+    </div>
+  </section>
 
-        // Function to send a log to the server
-        async function sendLog() {
-            await fetch('/log', {
-                method: 'POST',
-                headers: { 'Content-Type': 'application/json' },
-                body: JSON.stringify({
-                    user: 'TestUser',
-                    action: 'Visited Page'
-                })
-            });
-        }
+  <section id="modules" class="modules">
+    <div class="container">
+      <h2>AI-Powered Modules</h2>
+      <p>Nine comprehensive modules working together to accelerate your career growth with cutting-edge AI technology.</p>
+      <div class="card-grid">
+        <div class="card">
+          <h3>User Profiling Engine</h3>
+          <p>Analyze your skills, projects, and activities with confidence scoring based on recency and quality.</p>
+          <a href="#" class="link">Explore →</a>
+        </div>
+        <div class="card">
+          <h3>Job Market Analyzer</h3>
+          <p>Real-time job platform scanning to identify trends and market gaps by domain and region.</p>
+          <a href="#" class="link">Explore →</a>
+        </div>
+        <div class="card">
+          <h3>Skill Gap Analyzer</h3>
+          <p>Compare your skills with job requirements and get personalized learning time estimates.</p>
+          <a href="#" class="link">Explore →</a>
+        </div>
+        <div class="card">
+          <h3>Smart Roadmap Generator</h3>
+          <p>Create dynamic roadmaps with milestone paths for optimal skill development.</p>
+          <a href="#" class="link">Explore →</a>
+        </div>
+        <div class="card">
+          <h3>Gamified Upskilling</h3>
+          <p>Engaging learning experience with quests, team streaks, and AI-generated quizzes.</p>
+          <a href="#" class="link">Explore →</a>
+        </div>
+        <div class="card">
+          <h3>Mentor Matching System</h3>
+          <p>Advanced matching algorithm connecting mentors and mentees based on style and goals.</p>
+          <a href="#" class="link">Explore →</a>
+        </div>
+        <div class="card">
+          <h3>Organizational Dashboard</h3>
+          <p>Team analytics, gap risk tracking, and promotion readiness insights for leaders.</p>
+          <a href="#" class="link">Explore →</a>
+        </div>
+        <div class="card">
+          <h3>AI Career Copilot</h3>
+          <p>LLM-powered chatbot providing personalized career advice and guidance.</p>
+          <a href="#" class="link">Explore →</a>
+        </div>
+        <div class="card">
+          <h3>Resume & Portfolio Enhancer</h3>
+          <p>Auto-generate optimized resumes, LinkedIn summaries, and portfolio templates.</p>
+          <a href="#" class="link">Explore →</a>
+        </div>
+      </div>
+    </div>
+  </section>
 
-        // First, log the page visit
-        sendLog().then(() => {
-            // Then load the logs
-            loadLogs();
-        });
+  <section class="addons">
+    <div class="container">
+      <h2>Innovation Add-ons</h2>
+      <p>Advanced features that set our platform apart from traditional career development tools.</p>
+      <div class="card-grid small">
+        <div class="card">Feedback Loop</div>
+        <div class="card">Cross-Industry Transferability</div>
+        <div class="card">Career Forecast Timeline</div>
+        <div class="card">Adaptive Curriculum</div>
+      </div>
+    </div>
+  </section>
 
-        // Reload logs every 3 seconds
-        setInterval(loadLogs, 3000);
-    </script>
+  <section class="cta">
+    <div class="container cta-content">
+      <h2>Ready to <span>Accelerate</span> Your Career?</h2>
+      <p>Join thousands of professionals who have transformed their careers with our AI-powered platform.</p>
+      <div>
+        <button class="btn-primary" id="cta-getstarted">Get Started Free</button>
+        <button class="btn-secondary">Schedule Demo</button>
+      </div>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <div class="container">
+      © 2025 SkillForge. All rights reserved.
+    </div>
+  </footer>
+
+  <!-- get started Modal -->
+  <div id="getstarted-modal" class="modal">
+    <div class="modal-content">
+      <span class="close" data-close>&times;</span>
+      <h2>Get Started</h2>
+      <input type="email" placeholder="Email" />
+      <input type="password" placeholder="Password" />
+      <button class="btn-primary" id="getstarted-submit">Log in</button>
+    </div>
+  </div>
+
+  <!-- Sign in Modal -->
+  <div id="signin-modal" class="modal">
+    <div class="modal-content">
+      <span class="close" data-close>&times;</span>
+      <h2>Sign in</h2>
+      <input type="text" placeholder="Full Name" id="name-field" />
+      <input type="email" placeholder="Email" id="email-field" />
+      <input type="password" placeholder="Create Password" id="password-field" />
+      <button class="btn-primary" id="signin-submit">Create Account</button>
+    </div>
+  </div>
+  
+
+  <script src="index.js"></script>
 </body>
 </html>

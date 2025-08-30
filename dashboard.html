@@ -4,35 +4,49 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>SkillVision Dashboard</title>
-  <link rel="stylesheet" href="dashboard.css" />
+  <link rel="stylesheet" href="index.css" />
 </head>
 <body>
 <header class="navbar">
-    <nav>
-      <ul class="nav-left">
-        <li><a href="#">Dashboard</a></li>
-        <li><a href="#">Job Trends</a></li>
-        <li><a href="#">Resume Builder</a></li>
-        <li><a href="#">Onboarding Wizard</a></li>
-      </ul>
-
-      <div class="nav-right">
-        <button class="notification-btn">
+  <div class="nav-content">
+    <div class="nav-left">
+      <h3>Dashboard</h3S>
+    </div>
+    <div class="nav-right">
+      <!-- Notification button with badge -->
+      <div class="notification-wrapper">
+        <button id="notification-btn">
           🔔
-          <span class="badge">3</span>
+          <span id="notification-count" class="notification-count">2</span>
         </button>
-        <a href="#" class="logout">Log Out</a>
+        <div id="notification-dropdown" class="notification-dropdown">
+          <!-- Example notifications -->
+          <div class="notification-item unread">
+            <p>New user signed up</p>
+            <button class="mark-read">Mark as read</button>
+            <button class="delete">Delete</button>
+          </div>
+          <div class="notification-item unread">
+            <p>Server restarted</p>
+            <button class="mark-read">Mark as read</button>
+            <button class="delete">Delete</button>
+          </div>
+        </div>
       </div>
-    </nav>
-  </header>
+      <button id="theme-toggle" class="btn-secondary">🌙</button>
+      <a href="index.html" id="logout-btn" class="btn-primary">Log Out</a>
+    </div>
+  </div>
+</header>
+
 
   <main class="main-content">
     <section class="hero">
       <h1>Welcome to SkillGap 👋</h1>
       <h2 id="welcome-message" class="welcome-text"></h2>
       <p>Your AI-powered Skill Gap Analyzer</p>
-      <div class="hero-buttons">
-        <button class="primary-btn">Get Started</button>
+      <div class="hero-button">
+        <button id="profileSetupBtn" class="btn-primary">Profile Setup</button>
       </div>
     </section>
 
@@ -53,12 +67,6 @@
       </div>
 
       <div class="card">
-        <h2>Streak</h2>
-        <div class="streak-badge">7</div>
-        <button class="secondary-btn">Continue Streak</button>
-      </div>
-
-      <div class="card">
         <h2>Personal Roadmap</h2>
         <ul>
           <li>Week 1: Python Basics</li>
@@ -74,7 +82,7 @@
     </section>
   </main>
 
-  <script src="script.js"></script>
+  <script src="index.js"></script>
 </body>
 </html>
 

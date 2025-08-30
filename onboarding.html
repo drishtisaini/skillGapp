@@ -4,13 +4,26 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Onboarding Wizard</title>
-  <link rel="stylesheet" href="onboarding.css" />
+  <link rel="stylesheet" href="index.css" />
 </head>
-<body>
+<body >
+  <header class="navbar">
+  <div class="nav-content">
+    <div class="nav-left">
+      <h3>Profile Setup</h3S>
+    </div>
+    <div class="nav-right">
+      
+      <button id="theme-toggle" class="btn-secondary">🌙</button>
+      <a href="index.html" id="logout-btn" class="btn-primary">Log Out</a>
+    </div>
+  </div>
+</header>
+  <main class="onboarding">
   <div class="wizard-container">
     <div class="wizard-header">
       <h1>Welcome to SkillGap</h1>
-      <p>Let’s set up your journey in a few quick steps.</p>
+      <p>Let's set up your journey in a few quick steps.</p>
     </div>
 
     <!-- Progress Bar -->
@@ -22,20 +35,20 @@
     <form id="onboardingForm">
       <!-- Step 1 -->
       <div class="step active">
-        <h2>Welcome 🎉</h2>
-        <p>We’ll guide you through setting up your account preferences.</p>
+        <h2>Welcome </h2>
+        <p>We'll guide you through setting up your account preferences.</p>
       </div>
 
       <!-- Step 2 -->
       <div class="step">
-        <h2>Profile Setup 👤</h2>
+        <h2>Profile Setup </h2>
         <input type="text" placeholder="Full Name" required>
         <input type="email" placeholder="Email" required>
       </div>
 
       <!-- Step 3 -->
       <div class="step">
-        <h2>Select Your Skills 💡</h2>
+        <h2>Select Your Skills </h2>
         <label><input type="checkbox"> Web Development</label>
         <label><input type="checkbox"> Data Science</label>
         <label><input type="checkbox"> Marketing</label>
@@ -44,7 +57,7 @@
 
       <!-- Step 4 -->
       <div class="step">
-        <h2>Your Experience Level 📊</h2>
+        <h2>Your Experience Level </h2>
         <select required>
           <option value="">Choose...</option>
           <option>Beginner</option>
@@ -55,13 +68,13 @@
 
       <!-- Step 5 -->
       <div class="step">
-        <h2>Your Goals 🎯</h2>
+        <h2>Your Goals </h2>
         <textarea placeholder="Tell us your short/long term goals"></textarea>
       </div>
 
       <!-- Step 6 -->
       <div class="step">
-        <h2>Notification Preferences 🔔</h2>
+        <h2>Notification Preferences </h2>
         <label><input type="checkbox"> Email</label>
         <label><input type="checkbox"> SMS</label>
         <label><input type="checkbox"> WhatsApp</label>
@@ -80,7 +93,7 @@
       </div>
     </form>
   </div>
-
-  <script src="onboarding.js"></script>
+</main>
+  <script src="index.js"></script>
 </body>
 </html>
